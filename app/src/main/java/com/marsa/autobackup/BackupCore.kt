@@ -361,7 +361,9 @@ object BackupEngine {
             completeBody
         )
 
-        val result = completed.optJSONObject("upload")\n            ?: completed.optJSONObject("result")\n            ?: completed
+        val result = completed.optJSONObject("upload")
+            ?: completed.optJSONObject("result")
+            ?: completed
         val version = result?.optInt("version_no", 0) ?: 0
         progress("Tersimpan: $relativePath (versi $version)")
     }
