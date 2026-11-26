@@ -68,7 +68,7 @@ class MainActivity : Activity() {
         enrollment = EditText(this).apply {
             hint = "Enrollment key"
             inputType = 129
-            singleLine = true
+            maxLines = 1
         }
 
         status = TextView(this).apply {
