@@ -2,8 +2,7 @@ name: Build MARSA Auto Backup Android
 
 on:
   workflow_dispatch:
-  push:
-    branches: [main]
+  
     paths:
       - 'app/**'
       - '*.gradle.kts'
